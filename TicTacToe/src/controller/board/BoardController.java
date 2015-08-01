@@ -10,7 +10,7 @@ import com.sun.org.apache.xpath.internal.operations.Equals;
  *
  * @author Nilanga
  */
-public class board_controller {
+public class BoardController {
 
     public boolean isBoardFull(String[][] board) {
         for (int i = 0; i < 3; i++) {
@@ -53,7 +53,9 @@ public class board_controller {
     }
     
     public boolean checkForWins(String[][] board){
-        if(checkRowWin(board) || checkColWin(board) || checkDiagonalWin(board)){}
+        if(checkRowWin(board) || checkColWin(board) || checkDiagonalWin(board)){
+            return true;
+        }
         return false;
     }
 }
